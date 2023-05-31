@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"qea\startup_stm32f103xe.o"
+"qea\main.o"
+"qea\gpio.o"
+"qea\tim.o"
+"qea\usart.o"
+"qea\stm32f1xx_it.o"
+"qea\stm32f1xx_hal_msp.o"
+"qea\stm32f1xx_hal_gpio_ex.o"
+"qea\stm32f1xx_hal_tim.o"
+"qea\stm32f1xx_hal_tim_ex.o"
+"qea\stm32f1xx_hal.o"
+"qea\stm32f1xx_hal_rcc.o"
+"qea\stm32f1xx_hal_rcc_ex.o"
+"qea\stm32f1xx_hal_gpio.o"
+"qea\stm32f1xx_hal_dma.o"
+"qea\stm32f1xx_hal_cortex.o"
+"qea\stm32f1xx_hal_pwr.o"
+"qea\stm32f1xx_hal_flash.o"
+"qea\stm32f1xx_hal_flash_ex.o"
+"qea\stm32f1xx_hal_exti.o"
+"qea\stm32f1xx_hal_uart.o"
+"qea\system_stm32f1xx.o"
+--strict --scatter "QEA\QEA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "QEA.map" -o QEA\QEA.axf
